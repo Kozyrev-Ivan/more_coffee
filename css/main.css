@@ -1,0 +1,105 @@
+body {
+    padding: 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* Хэдер */
+.logotip {
+    height: 100px;
+    background-color: #0255b3;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    
+}
+
+/* Информация о кофейне */
+.info {
+    height: 600px;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    justify-content:space-between;
+}
+    /* Блок с картинками */
+.images {
+  position: relative;
+  width: 600px;
+}
+
+ .img1 {
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+}
+
+.img2 {
+    position: absolute;
+} 
+
+.img3 {
+    position: absolute;
+    left: 320px;
+    top: 60px;
+}
+    /* Блок с описанием */
+.description {
+    height: 200px;
+    width: 450px;
+}
+h1 {
+    color: rgb(67, 67, 67);
+    font-size: 36px;
+}
+
+.title {
+    padding-top: 140px;
+}
+
+.descriptionText {
+    font-size: 24px;
+    font-weight:100;
+}
+
+/* Форма для трудоустройства */
+
+.application {
+    background-color: rgb(217, 230, 246);
+    height: 600px;
+    padding: 50px;
+}
+.titleForm {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.element {
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    
+}
+input {
+   
+}
+
+button {
+    border-width: 1px;
+    background-color: #7498c2;
+    
+}
+
+textarea {
+    
+}
+
+
+
