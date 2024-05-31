@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,24 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <header>
         <div class="logotip">
-            <img src="img/logо.jpg" alt="logo" height="75px">
+            <img src="img/logо.jpg" alt="logo" height="75px" class="logoB">
+            <span class="textHeader uniquifier">Море Кофе - Сеть кофеен в малых городах</span>
         </div>
     </header>
 
     <section class="info">
         <div class="images">
-            <img src="img/picture2.png" alt="Кофейня" width="300px"class="img2">
+            <img src="img/picture2.png" alt="Кофейня" width="300px" class="img2">
             <img src="img/picture1.jpg" alt="Кофейня" height="230px" class="img1">
-            <img src="img/picture3.png" alt="Кофейня" width="220px"class="img3">
+            <img src="img/picture3.png" alt="Кофейня" width="220px" class="img3">
         </div>
         <div class="description">
             <h1 class="title uniquifier">О ПРОЕКТЕ</h1>
@@ -31,6 +35,22 @@
             </span>
         </div>
     </section>
+
+    <main>
+        <h1 class="page-title">Наше меню</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="img/price1.jpg" alt="Основное меню">
+                <img src="img/price4.png" alt="Красивые круассаны">
+                <img src="img/price2.jpg" alt="Десерты">
+                <img src="img/price5.png" alt="Вкусные трубочки">
+                <img src="img/price3.jpg" alt="Перекусы">
+                <img src="img/price6.png" alt="Макароны">
+            </div>
+            <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+            <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
+        </div>
+    </main>
 
     <section class="application">
         <h1 class="titleForm uniquifier">Заполни анкету, чтобы попасть к нам в команду </h1>
@@ -43,6 +63,33 @@
         </form>
     </section>
 
+    <hr style="border: 0; height: 2px; background-color:  rgb(67, 67, 67);">
 
+    <footer>
+        <h1 class="page-title">Наши адреса</h1>
+        <div class="address">
+            <div class="adr">
+                <img src="img/logo_white.jpg" alt="Наше лого" height="50px" class="logoW">
+                <div>
+                    <span class="textAddress uniquifier">г. Арамиль <br>ул. 1 Мая, 38/1 <br>7:00-22:00 </span>
+                </div>
+            </div>
+            <div class="adr">
+                <img src="img/logo_white.jpg" alt="Наше лого" height="50px" class="logoW">
+                <div>
+                    <span class="textAddress uniquifier">г. Арамиль <br>ул. Малышева, 25А <br>7:00-22:00 </span>
+                </div>
+            </div>
+            <div class="adr">
+                <img src="img/logo_white.jpg" alt="Наше лого" height="50px" class="logoW">
+                <div>
+                    <span class="textAddress uniquifier">г. Сысерть <br>ул. Карла Либкнехта, 72/1 <br>7:00-22:00 </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/sliderMenu.js"></script>
 </body>
+
 </html>
