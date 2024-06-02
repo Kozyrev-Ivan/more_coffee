@@ -179,21 +179,22 @@
     }
 
     .img2 {
-        width: 180px;
+        width: 160px;
     }
     .img1 {
         height: 160px;
-        left: 70px;
-        bottom: 370px;
+        left: 55px;
+        bottom: 380px;
     }
     .img3 {
-        width: 145px;
-        left: 195px;
-        top: 35px;
+        width: 135px;
+        left: 170px;
+        top: 40px;
     }
 
     .info {
         height: 770px;
+        padding: 30px;
     }
 
     .images {
@@ -208,7 +209,7 @@
 
     .description {
         position: absolute;
-        width: 350px;
+        width: 320px;
         text-align: center;
     }
 
