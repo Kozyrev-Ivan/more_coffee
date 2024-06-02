@@ -1,0 +1,251 @@
+/*Media запросы CSS для адаптации страницы*/
+@media screen and (max-width: 1100px) {
+    .img2 {
+        width: 250px;
+    }
+    .img1 {
+        height: 200px;
+        left: 130px;
+        bottom: 70px;
+    }
+    .img3 {
+        width: 190px;
+        left: 270px;
+    }
+
+    .title {
+        padding-top: 125px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .descriptionText {
+        font-size: 22px;
+        font-weight:100;
+    }
+
+    .slider-container {
+        width: 332px;
+        height: 600px;
+      }
+    
+    .logoW {
+        height: 40px;
+    }
+
+    .adr {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .img2 {
+        width: 210px;
+    }
+    .img1 {
+        height: 180px;
+        left: 110px;
+        bottom: 60px;
+    }
+    .img3 {
+        width: 170px;
+        left: 225px;
+        top: 40px;
+    }
+
+    .info {
+        height: 520px;
+    }
+
+    .title {
+        padding-top: 80px;
+        font-size: 28px;
+    }
+
+    .descriptionText {
+        font-size: 19px;
+        font-weight:100;
+    }
+
+    .slider-container {
+        width: 314px;
+        height: 550px;
+      }
+    
+    .prev-button, .next-button {
+        width: 42px;
+        height: 50px;
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .application {
+        height: 360px;
+    }
+
+    .element {
+        width: 350px;
+        height: 40px;
+        font-size: 16px;
+        margin: 8px;
+    }
+    .logoW {
+        height: 35px;
+    }
+
+    .adr {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 825px) {
+
+    .img2 {
+        width: 180px;
+    }
+    .img1 {
+        height: 150px;
+        left: 100px;
+        bottom: 60px;
+    }
+    .img3 {
+        width: 140px;
+        left: 195px;
+        top: 40px;
+    }
+
+    .info {
+        height: 450px;
+    }
+
+    .title {
+        padding-top: 45px;
+        font-size: 24px;
+    }
+
+    .descriptionText {
+        font-size: 16px;
+        font-weight:100px;
+    }
+
+    .slider-container {
+        width: 314px;
+        height: 550px;
+      }
+    
+    .prev-button, .next-button {
+        width: 42px;
+        height: 50px;
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .application {
+        height: 360px;
+    }
+
+    .element {
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+        margin: 8px;        
+    }
+    .logoW {
+        height: 30px;
+    }
+
+    .adr {
+        font-size: 13px;
+    } 
+}
+
+@media screen and (max-width: 430px) {
+    .logoB {
+        height: 50px;
+        left: 30px
+    }
+
+    .textHeader {
+        font-size: 14px;
+    }
+
+    .img2 {
+        width: 180px;
+    }
+    .img1 {
+        height: 160px;
+        left: 70px;
+        bottom: 370px;
+    }
+    .img3 {
+        width: 145px;
+        left: 195px;
+        top: 35px;
+    }
+
+    .info {
+        height: 770px;
+    }
+
+    .images {
+        position: relative;
+        width: 600px;
+      }
+
+    .title {
+        padding-top: 430px;
+        font-size: 26px;
+    }
+
+    .description {
+        position: absolute;
+        width: 350px;
+        text-align: center;
+    }
+
+    .descriptionText {
+        font-size: 18px;
+        font-weight:100px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .application {
+        height: 500px;
+    }
+
+    .element {
+        width: 300px;
+        height: 55px;
+        font-size: 16px;
+        margin: 12px;        
+    }
+
+    .address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoW {
+        height: 50px;
+    }
+
+    .adr {
+        font-size: 13px;
+        margin-bottom: 20px;
+        justify-content:start;
+        width: 230px;
+    } 
+}
