@@ -147,7 +147,7 @@ form {
     margin: 10px;
     outline: none;
     border-color: #0255b3;
-    border-width: 1px;
+    border-width: 1.3px;
     
 }
 input {
@@ -184,4 +184,9 @@ footer {
 
 .logoW {
     margin-right: 10px;
+}
+
+/* Стили для вывода ошибки при валидации */
+.message {
+    color: rgb(255, 0, 0);
 }

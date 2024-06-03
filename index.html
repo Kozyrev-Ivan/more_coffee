@@ -56,10 +56,13 @@
     <section class="application">
         <h1 class="titleForm uniquifier">Заполни анкету, чтобы попасть к нам в команду </h1>
         <form action="#" method="get">
-            <input type="text" placeholder="Имя" class="element">
-            <input type="tel" placeholder="Номер телефона" class="element">
-            <input type="text" placeholder="Аккаунт Telegram" class="element">
-            <textarea name="" id="" placeholder="Почемы вы хотите работать именно у нас?" class="element"></textarea>
+            <input type="text" name="name" id="name" placeholder="Имя" class="element" required onblur="checkName()">
+            <span class="message" id="messageName"></span>
+            <input type="tel" name="tel" id="tel" placeholder="Номер телефона" class="element" required onblur="checkTel()">
+            <span class="message" id="messageTel"></span>
+            <input type="text" name="telegramm" id="telegramm" placeholder="Аккаунт Telegram" class="element" required onblur="checkTelegramm()">
+            <span class="message" id="messageTelegramm"></span>
+            <textarea name="area" id="area" placeholder="Почемы вы хотите работать именно у нас?" class="element" required></textarea>
             <button class="element">Отправить</button>
         </form>
     </section>
@@ -91,6 +94,7 @@
     </footer>
 
     <script src="js/sliderMenu.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 
 </html>
