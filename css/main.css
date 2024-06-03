@@ -190,3 +190,20 @@ footer {
 .message {
     color: rgb(255, 0, 0);
 }
+
+/* Создание эффекта появления для описания */
+.opacit {
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    }
+
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
