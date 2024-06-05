@@ -4,12 +4,13 @@ body {
     box-sizing: border-box;
 }
 /* Хэдер */
+
 .logotip {
     height: 100px;
     background-color: #0255b3;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     padding-left: 50px;
     
 }
@@ -18,9 +19,40 @@ body {
     left: 50px;
 }
 
-.textHeader {
+/* меню навигации */
+nav {
+    background-color: #ffffff;
+    height: 70px;
+    width: 600px;
+    margin-right: 50px; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    justify-content: right;
+    align-items: center ; 
+}
+
+li a {
+    display: block;
+    background-color: #0255b3;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+li a:hover {
+    background-color: rgb(67, 67, 67);
 }
 
 /* Информация о кофейне */

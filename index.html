@@ -16,13 +16,21 @@
 <body>
 
     <header>
-        <div class="logotip">
+        <div class="logotip uniquifier">
             <img src="img/logо.jpg" alt="logo" height="75px" class="logoB">
-            <span class="textHeader uniquifier">Море Кофе - Сеть кофеен в малых городах</span>
+            <nav>
+                <ul>
+                    <li><a href="#info">Главная</a></li>
+                    <li><a href="#menu">Наше меню</a></li>
+                    <li><a href="#application">Анкета на работу</a></li>
+                    <li><a href="#address">Наши адреса</a></li>
+                    
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="info">
+    <section class="info" id="info">
         <div class="images">
             <img src="img/picture2.png" alt="Кофейня" width="300px" class="img2">
             <img src="img/picture1.jpg" alt="Кофейня" height="230px" class="img1">
@@ -36,7 +44,7 @@
         </div>
     </section>
 
-    <main>
+    <main id="menu">
         <h1 class="page-title">Наше меню</h1>
         <div class="slider-container">
             <div class="slider">
@@ -52,7 +60,7 @@
         </div>
     </main>
 
-    <section class="application">
+    <section class="application" id="application">
         <h1 class="titleForm uniquifier">Заполни анкету, чтобы попасть к нам в команду </h1>
         <form action="#" method="get">
             <input type="text" name="name" id="name" placeholder="Имя" class="element" required onblur="checkName()">
@@ -68,7 +76,7 @@
 
     <hr style="border: 0; height: 2px; background-color:  rgb(67, 67, 67);">
 
-    <footer>
+    <footer id="address">
         <h1 class="page-title">Наши адреса</h1>
         <div class="address">
             <div class="adr">
