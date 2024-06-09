@@ -10,8 +10,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
 
 <body>
 
@@ -23,8 +24,9 @@
                     <li><a href="#info">Главная</a></li>
                     <li><a href="#menu">Наше меню</a></li>
                     <li><a href="#application">Анкета на работу</a></li>
+                    <li><a href="#feedback">Обратная связь</a></li>
                     <li><a href="#address">Наши адреса</a></li>
-                    
+
                 </ul>
             </nav>
         </div>
@@ -62,14 +64,36 @@
 
     <section class="application" id="application">
         <h1 class="titleForm uniquifier">Заполни анкету, чтобы попасть к нам в команду </h1>
-        <form action="#" method="get">
+        <form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+            <input type="hidden" name="access_key" value="1c7f846e-48c6-4ccd-9711-441330fd2ab9">
+
             <input type="text" name="name" id="name" placeholder="Имя" class="element" required onblur="checkName()">
             <span class="message" id="messageName"></span>
-            <input type="tel" name="tel" id="tel" placeholder="Номер телефона" class="element" required onblur="checkTel()">
+            <input type="tel" name="tel" id="tel" placeholder="Номер телефона" class="element" required
+                onblur="checkTel()">
             <span class="message" id="messageTel"></span>
-            <input type="text" name="telegramm" id="telegramm" placeholder="Аккаунт Telegram" class="element" required onblur="checkTelegramm()">
+            <input type="text" name="telegramm" id="telegramm" placeholder="Аккаунт Telegram" class="element" required
+                onblur="checkTelegramm()">
             <span class="message" id="messageTelegramm"></span>
-            <textarea name="area" id="area" placeholder="Почемы вы хотите работать именно у нас?" class="element" required></textarea>
+            <textarea name="area" id="area" placeholder="Почемы вы хотите работать именно у нас?" class="element"
+                required></textarea>
+            <button class="element">Отправить</button>
+        </form>
+    </section>
+
+    <hr style="border: 0; height: 2px; background-color:  rgb(67, 67, 67);">
+
+    <section class="application" id="feedback">
+        <h1 class="titleForm uniquifier">Форма обратной связи</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" id="forms">
+            <input type="hidden" name="access_key" value="1c7f846e-48c6-4ccd-9711-441330fd2ab9">
+
+            <input type="text" name="n" id="n" placeholder="Имя" class="element" required onblur="checkN()">
+            <span class="message" id="messageN"></span>
+            <input type="mail" name="mail" id="mail" placeholder="email" class="element" required onblur="checkM()">
+            <span class="message" id="messageMail"></span>
+            <textarea name="ar" id="ar" placeholder="Что вы хотели сказать?" class="element" required></textarea>
             <button class="element">Отправить</button>
         </form>
     </section>
@@ -102,6 +126,7 @@
 
     <script src="js/sliderMenu.js"></script>
     <script src="js/validation.js"></script>
+    <script src="js/valid.js"></script>
 
 </body>
 

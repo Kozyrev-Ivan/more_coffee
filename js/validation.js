@@ -1,54 +1,70 @@
 function checkName() {
-
-    let name = document.getElementById("name").value;
+    let nameInput = document.getElementById("name");
+    let nameMessage = document.getElementById("messageName");
     let regex = /^[a-zA-ZА-Яа-я]{2,15}$/;
-    let message = document.getElementById("messageName");
-    
-    if (regex.test(name)) { 
-        document.getElementById("name").style.borderColor = "green";
-        message.textContent = "";
-        return true;
-    } 
-    else {
-        document.getElementById("name").style.borderColor = "red";
-        message.textContent = "Введите корректное имя: без цифр и дополнительных знаков";
+
+    if (nameInput.value === "") {
+        nameMessage.innerHTML = "Пожалуйста, введите имя";
+        nameInput.style.borderColor = "red";
         return false;
+    } else if (!regex.test(nameInput.value)) {
+        nameMessage.innerHTML = "Введите корректное имя: без цифр и дополнительных знаков";
+        nameInput.style.borderColor = "red";
+        return false;
+    } else {
+        nameMessage.innerHTML = "";
+        nameInput.style.borderColor = "green";
+        return true;
     }
 }
 
-
 function checkTel() {
-
-    let tel = document.getElementById("tel").value;
+    let telInput = document.getElementById("tel");
+    let telMessage = document.getElementById("messageTel");
     let regex = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
-    let message = document.getElementById("messageTel");
-    
-    if (regex.test(tel)) { 
-        document.getElementById("tel").style.borderColor = "green";
-        message.textContent = "";
-        return true;
-    } 
-    else {
-        document.getElementById("tel").style.borderColor = "red";
-        message.textContent = "Проверьте правильность введеного номера телефона";
+
+    if (telInput.value === "") {
+        telMessage.innerHTML = "Dведите номер телефона";
+        telInput.style.borderColor = "red";
         return false;
+    } else if (!regex.test(telInput.value)) {
+        telMessage.innerHTML = "Проверьте правильность введеного номера телефона";
+        telInput.style.borderColor = "red";
+        return false;
+    } else {
+        telMessage.innerHTML = "";
+        telInput.style.borderColor = "green";
+        return true;
     }
 }
 
 function checkTelegramm() {
-
-    let telegramm = document.getElementById("telegramm").value;
+    let telegrammInput = document.getElementById("telegramm");
+    let telegrammMessage = document.getElementById("messageTelegramm");
     let regex = /^[a-zA-Z]{2,15}$/;
-    let message = document.getElementById("messageTelegramm");
-    
-    if (regex.test(telegramm)) { 
-        document.getElementById("telegramm").style.borderColor = "green";
-        message.textContent = "";
-        return true;
-    } 
-    else {
-        document.getElementById("telegramm").style.borderColor = "red";
-        message.textContent = "Минимум 5 символов: только латнские буквы и цифры  ";
+
+    if (telegrammInput.value === "") {
+        telegrammMessage.innerHTML = "Dведите аккаунт Telegram";
+        telegrammInput.style.borderColor = "red";
         return false;
+    } else if (!regex.test(telegrammInput.value)) {
+        telegrammMessage.innerHTML = "Минимум 5 символов: только латинские буквы и цифры";
+        telegrammInput.style.borderColor = "red";
+        return false;
+    } else {
+        telegrammMessage.innerHTML = "";
+        telegrammInput.style.borderColor = "green";
+        return true;
     }
 }
+
+document.querySelector("form").addEventListener("submit", function (date) {
+    
+    if (!checkName() || !checkTel() || !checkTelegramm()) {
+        date.preventDefault();
+        alert("Заполните все обязательные поля корректно");
+    }
+    else{
+        alert("Спасибо за ваш отклик!");
+    }
+});
