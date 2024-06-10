@@ -38,10 +38,10 @@ function checkM() {
     }
 }
 
-document.querySelector("forms").addEventListener("submit", function (e) {
+document.querySelector("#forms").addEventListener("submit", function (date2) {
     
     if (!checkN() || !checkM()) {
-        e.preventDefault();
+        date2.preventDefault();
         alert("Заполните все обязательные поля корректно");
     }
     else{
